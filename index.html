@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rule-Based Chatbot</title>
+</head>
+<body style="font-family: Arial; padding: 20px;">
+    <h2>Rule-Based Chatbot</h2>
+    <form method="post">
+        <input type="text" name="message" placeholder="Type your message..." required style="width: 300px;">
+        <input type="submit" value="Send">
+    </form>
+    {% if response %}
+        <p><strong>Chatbot:</strong> {{ response }}</p>
+    {% endif %}
+</body>
+</html>
